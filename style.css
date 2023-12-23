@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(151, 255, 151);
+}
+
+.headerItems{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    margin: 15px, 15px;
+    border: solid;
+    border-color: black;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.orgList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid;
+    border-color: black;
+    border-radius: 10px;
+    padding: 50px 50px;
+}
+
+.profileHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    margin: 15px, 15px;
+    border: solid;
+    border-color: black;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
