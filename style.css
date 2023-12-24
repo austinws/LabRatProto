@@ -2,6 +2,10 @@ body{
     background-color: rgb(151, 255, 151);
 }
 
+ul{
+    display: flex;
+}
+
 .headerItems{
     display: flex;
     flex-direction: row;
@@ -33,9 +37,21 @@ body{
     display: flex;
     flex-direction: row;
     justify-content:space-around;
-    margin: 15px, 15px;
+    margin: 15px 15px;
     border: solid;
     border-color: black;
     border-radius: 10px;
     padding: 10px 10px;
+}
+
+.orgselect{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: solid;
+    border-color: silver;
+    border-radius: 10px;
+    margin: 20px 20px;
+    padding: 20px 20px;
+
 }
