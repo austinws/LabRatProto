@@ -1,0 +1,17 @@
+[
+    {
+        "id":"1",
+        "name":"Arasaka: Social Sciences Division",
+        "description":"At the Social Sciences Division of Arasaka, you will be sunjected to various social tests and compensated."
+    },
+    {
+        "id":"2",
+        "name":"Militech",
+        "description":"Earn some extra eddies by volunteering for research trials at Militechs R&D campus!"
+    },
+    {
+        "id":"3",
+        "name":"Kang Tao Pharamaceuticals",
+        "description": "You must sign an NDA and some other documents before testing some of our newest pharmaceutical drugs."
+    }
+]
