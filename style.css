@@ -1,5 +1,6 @@
 body{
     background-color: rgb(151, 255, 151);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 ul{
@@ -54,4 +55,10 @@ ul{
     margin: 20px 20px;
     padding: 20px 20px;
 
+}
+
+.financeheader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
