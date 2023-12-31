@@ -59,6 +59,12 @@ ul{
 
 .financeheader{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
+}
+
+.financebody{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
