@@ -13,7 +13,52 @@
         <input type="text" id="fname" name="fname"><br><br>
         <label for="lname">Last name:</label>
         <input type="text" id="lname" name="lname"><br><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br><br>
         <input type="submit" value="Submit">
-      </form>
+    </form>
+    <script>
+      // Handle profile creation form submission (in create_profile.html)
+      const profileForm = document.getElementById('profileForm');
+      profileForm.addEventListener('submit', (event) => {
+      event.preventDefault(); // Prevent default form submission
+
+      // Collect and validate user data
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      // ... (collect other fields)
+
+      // Basic validation (replace with more robust checks as needed)
+      if (fname === '') {
+       alert('Please enter your first name.');
+        return;
+      }
+      if (lname === ''){
+        alert('Please enter your last name.')
+        return;
+      }
+      if (!email.includes('@')) {
+        alert('Please enter a valid email address.');
+        return;
+      }
+      // ... (validate other fields)
+
+      // Send data to action_page.php using AJAX
+      const xhr = new XMLHttpRequest();
+      xhr.open('POST', 'action_page.php');
+      xhr.onload = () => {
+        if (xhr.status === 200) {
+          // Successful data processing
+          localStorage.setItem('hasProfile', true);
+          window.location.href = 'mainpage.html';
+        } else {
+          // Handle error
+          console.error('Data submission failed:', xhr.statusText);
+          alert('There was an error processing your data. Please try again.'); // Inform user
+        }
+      };
+      xhr.send(new FormData(profileForm));
+    });
+    </script>
   </body>
 </html>
