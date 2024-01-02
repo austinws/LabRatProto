@@ -1,8 +1,8 @@
 // Check for initial visit
 if (!localStorage.getItem('hasProfile')) {
-    window.location.href = 'create_profile.html';
+    window.location.href = 'createprofile.html';
   } else {
-    window.location.href = 'main_page.html';
+    window.location.href = 'mainpage.html';
   }
   
   // Handle profile creation form submission (in create_profile.html)
@@ -15,5 +15,5 @@ if (!localStorage.getItem('hasProfile')) {
     localStorage.setItem('hasProfile', true);
   
     // Redirect to main page
-    window.location.href = 'main_page.html';
+    window.location.href = 'mainpage.html';
   });
